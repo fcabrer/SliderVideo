@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider video</title>
+    <link rel="stylesheet" href="./css/sliderVideo.css" />
+  </head>
+  <body>
+    <section>
+      <div class="bannerVideo" id="slideShow">
+        <video
+          src="./img/buenosAires.mp4"
+          autoplay
+          muted
+          loop class="active"
+          
+        ></video>
+        <video src="./img/cataratasIguazu.mp4" autoplay muted loop ></video>
+        <video src="./img/peritoMoreno.mp4" autoplay muted loop></video>
+        <video src="./img/cordoba.mp4" autoplay muted loop></video>
+      </div>
+      <div class="container">
+        <header id="navbar">
+          <a href="#" class="logo">Argentina</a>
+          <ul>
+            <li><a href="#" class="active">Inicio</a></li>
+            <li><a href="#">Destinos</a></li>
+            <li><a href="https://previaje.gob.ar/">Pre Viaje</a></li>
+            <li><a href="https://www.argentina.gob.ar/turismoydeportes">Ministerio de Turismo</a></li>
+          </ul>
+          <span class="menuIcon" onclick="toggleMenu()"></span>
+        </header>
+        <div class="content">
+          <div class="bannerText" id="slideShowText">
+            <div class="active">
+              <h2>Buenos Aires</h2>
+              <p>
+                El Obelisco de Buenos Aires es un monumento histórico, considerado un ícono de la Ciudad de Buenos Aires, la capital de Argentina.
+
+                Tiene una longitud de 67,5 metros, y de estos 63 metros son desde la base de 7 x 7 m hasta el inicio del ápice 3,50 x 3,50mts. Culminando con una punta del estilo Roma de unos 40 cm.   
+
+
+              </p>
+            </div>
+            <div>
+              <h2>Cataratas del Iguazú</h2>
+              <p>
+                Las cataratas del Iguazú son el principal centro turístico del noreste de Argentina, y uno de los principales de todo el país.
+                En ellas, los paseos se encuentran principalmente en el lado argentino, aunque desde el lado brasileño se tiene una vista panorámica.
+
+
+              </p>
+            </div>
+            <div>
+              <h2>Glaciar Perito Moreno</h2>
+              <p>
+                El glaciar Perito Moreno, glaciar Bismarck o glaciar Francisco Gormaz1​ es una gruesa masa de hielo ubicada en el departamento Lago Argentino de la provincia de Santa Cruz, en el sudoeste de la Argentina, en la región de la Patagonia. Se integra dentro del parque nacional Los Glaciares.
+              </p>
+            </div>
+            <div>
+              <h2>Córdoba</h2>
+              <p>
+                Córdoba es la ciudad capital de la provincia de Córdoba, Argentina. Se sitúa en la región central del país, a ambas orillas del río Suquía. Es la ciudad más grande de Argentina con una superficie de 576 km² y la segunda más poblada del país. Se constituye en un importante centro cultural, económico, educativo, financiero y de entretenimiento de la región. También es conocida como La Docta o La Ciudad de las Campanas.
+              </p>
+            </div>
+          </div>
+        </div>
+        <ul class="controls">
+          <li onclick="preSlide();prevSlideText();"><img src="./img/ImgPrev.png" /></li>
+          <li onclick="nexSlide();nextSlideText();"><img src="./img/ImgNex.png" /></li>
+      </div>
+    </section>
+    <script src="./scrip.js"></script>
+  </body>
+</html>
